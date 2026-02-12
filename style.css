@@ -82,7 +82,8 @@ h6 {
 }
 
 * {
-  font-family: "Norse", sans-serif;
+  font-family: "Trebuchet MS";
+  font-weight: 500;
 }
 
 :root {
@@ -91,4 +92,60 @@ h6 {
   --secondary-color: #e5e7eb;
   --success-color: darkblue;
   --error-color: orangered;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+
+.cover-container {
+  position: relative;
+  flex: 1;
+}
+
+.title-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 30%;
+  left: 0;
+
+  width: 100%;
+  height: 20%;
+
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.cover-img {
+  height: 100%;
+}
+
+.cover-title {
+  font-family: "Norse", sans-serif;
+
+  color: var(--secondary-color);
+  font-size: 62px;
+}
+
+.cover-background-credits-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  text-align: center;
+
+  color: var(--secondary-color);
+}
+
+.cover-background-credits-container a {
+  color: var(--secondary-color);
+}
+
+.form-container {
+  flex: 2;
 }
