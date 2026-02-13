@@ -87,7 +87,7 @@ h6 {
 }
 
 :root {
-  --background-color: lightgrey;
+  --background-color: rgb(243, 243, 243);
   --primary-color: #596d48;
   --secondary-color: #e5e7eb;
   --success-color: darkblue;
@@ -95,9 +95,21 @@ h6 {
 }
 
 body {
+  background-color: rgb(24, 24, 24);
+}
+
+.sign-up-page-container {
   display: flex;
   flex-direction: row;
+
+  /* Set some dimension constrains, deal with resizing later on in the course */
+  width: 1440px;
+  height: 1024px;
+  margin-top: 150px;
+  background-color: var(--background-color);
 }
+
+/* COVER SECTION */
 
 .cover-container {
   position: relative;
@@ -111,7 +123,7 @@ body {
   left: 0;
 
   width: 100%;
-  height: 20%;
+  height: 13%;
 
   display: flex;
   flex-direction: row;
@@ -121,14 +133,19 @@ body {
 }
 
 .cover-img {
-  height: 100%;
+  height: 90%;
 }
 
 .cover-title {
   font-family: "Norse", sans-serif;
 
   color: var(--secondary-color);
-  font-size: 62px;
+  font-size: 80px;
+}
+
+.cover-background {
+  height: 100%;
+  object-fit: cover;
 }
 
 .cover-background-credits-container {
@@ -140,12 +157,75 @@ body {
   text-align: center;
 
   color: var(--secondary-color);
+  font-size: small;
+  font-weight: 200;
+
+  opacity: 85%;
+
+  margin-bottom: 5px;
 }
 
 .cover-background-credits-container a {
   color: var(--secondary-color);
 }
 
-.form-container {
+/* FORM SECTION */
+
+.form-section-container {
   flex: 2;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: auto 0;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin: 25px 50px;
+}
+
+.top-container p {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.top-container p em {
+  font-weight: 600;
+}
+
+.form-container {
+  background-color: white;
+  margin: 25px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* That subtle separation look */
+}
+
+.bottom-container {
+  margin: 25px 50px;
+}
+
+.create-account-button {
+  margin-bottom: 25px;
+
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+
+  background-color: var(--primary-color);
+  padding: 10px 60px;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* That subtle separation look */
+}
+
+.login-text {
+  font-size: 18px;
+}
+
+.login-text a {
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--primary-color);
 }

@@ -9,74 +9,104 @@
     <title>Sign-up Form</title>
   </head>
   <body>
-    <section class="cover-container">
-      <img
-        class="cover-background"
-        src="./resources/halie-west-25xggax4bSA-unsplash.jpg"
-        alt="Nature background"
-      />
-
-      <div class="title-container">
+    <div class="sign-up-page-container">
+      <section class="cover-container">
         <img
-          class="cover-img"
-          src="./resources/odin-lined.png"
-          alt="Odin Logo"
+          class="cover-background"
+          src="./resources/halie-west-25xggax4bSA-unsplash.jpg"
+          alt="Nature background"
         />
-        <h1 class="cover-title">Odin</h1>
-      </div>
 
-      <div class="cover-background-credits-container">
-        Photo by
-        <a
-          href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-          >Halie West</a
-        >
-        on
-        <a
-          href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-          >Unsplash</a
-        >
-      </div>
-    </section>
+        <div class="title-container">
+          <img
+            class="cover-img"
+            src="./resources/odin-lined.png"
+            alt="Odin Logo"
+          />
+          <h1 class="cover-title">Odin</h1>
+        </div>
 
-    <section class="form-container">
-      <p class="main-text">
-        This is not a real online service! You know you need something like this
-        in your life to help you realize your deepest dreams. Sign up
-        <em>now</em> to get started.
-      </p>
-      <p class="main-text">You <em>know</em> you want to.</p>
+        <div class="cover-background-credits-container">
+          Photo by
+          <a
+            href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Halie West</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+            >Unsplash</a
+          >
+        </div>
+      </section>
 
-      <form action="example.com/path" method="post" id="create_account_form">
-        <label for="first_name">First Name</label>
-        <input type="text" name="first_name" id="first_name" />
+      <section class="form-section-container">
+        <div class="top-container">
+          <p class="main-text">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <em>now</em> to get started.
+          </p>
+          <p class="main-text">You <em>know</em> you want to.</p>
+        </div>
 
-        <label for="last_name">Last Name</label>
-        <input type="text" name="last_name" id="last_name" />
+        <div class="form-container">
+          <p class="main-text">Let's do this!</p>
 
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" />
+          <form
+            action="example.com/path"
+            method="post"
+            id="create_account_form"
+          >
+            <div class="input-container">
+              <label for="first_name">First Name</label>
+              <input type="text" name="first_name" id="first_name" />
+            </div>
 
-        <label for="phone_number">Phone Number</label>
-        <input type="tel" name="phone_number" id="phone_number" />
+            <div class="input-container">
+              <label for="last_name">Last Name</label>
+              <input type="text" name="last_name" id="last_name" />
+            </div>
 
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" />
+            <div class="input-container">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </div>
 
-        <label for="confirm_password">Confirm Password</label>
-        <input type="password" name="confirm_password" id="confirm_password" />
-      </form>
+            <div class="input-container">
+              <label for="phone_number">Phone Number</label>
+              <input type="tel" name="phone_number" id="phone_number" />
+            </div>
 
-      <button
-        form="create_account_form"
-        class="create-account-button"
-        type="submit"
-      >
-        Create Account
-      </button>
-      <p class="login-text">
-        Already have an account? <a href="/login">Log in</a>
-      </p>
-    </section>
+            <div class="input-container">
+              <label for="password">Password</label>
+              <input type="password" name="password" id="password" />
+            </div>
+
+            <div class="input-container">
+              <label for="confirm_password">Confirm Password</label>
+              <input
+                type="password"
+                name="confirm_password"
+                id="confirm_password"
+              />
+            </div>
+          </form>
+        </div>
+
+        <div class="bottom-container">
+          <button
+            form="create_account_form"
+            class="create-account-button"
+            type="submit"
+          >
+            Create Account
+          </button>
+          <p class="login-text">
+            Already have an account? <a href="/login">Log in</a>
+          </p>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
