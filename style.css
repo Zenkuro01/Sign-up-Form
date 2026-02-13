@@ -90,8 +90,8 @@ h6 {
   --background-color: rgb(243, 243, 243);
   --primary-color: #596d48;
   --secondary-color: #e5e7eb;
-  --success-color: darkblue;
-  --error-color: orangered;
+  --active-color: blue;
+  --error-color: red;
 }
 
 body {
@@ -196,12 +196,6 @@ body {
   font-weight: 600;
 }
 
-.form-container {
-  background-color: white;
-  margin: 25px 0;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* That subtle separation look */
-}
-
 .bottom-container {
   margin: 25px 50px;
 }
@@ -228,4 +222,57 @@ body {
   font-weight: bold;
   text-decoration: none;
   color: var(--primary-color);
+}
+
+.form-container {
+  background-color: white;
+  margin: 25px 0;
+  padding: 20px 200px 40px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* That subtle separation look */
+}
+
+.form-container p {
+  font-size: 24px;
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+#create_account_form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  row-gap: 15px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+
+  width: 80%;
+}
+
+.input-container > label {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 14px;
+  color: rgb(63, 63, 63);
+  letter-spacing: 1px;
+}
+
+.input-container > input {
+  border: 1px solid lightgray;
+  height: 32px;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* That subtle separation look */
+  padding-left: 10px;
+}
+
+.input-container > input:focus-visible {
+  border: 2px solid var(--active-color);
+}
+
+.input-container > input:invalid {
+  border: 2px solid var(--error-color);
 }
